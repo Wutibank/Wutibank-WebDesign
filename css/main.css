@@ -3,6 +3,51 @@ background-color: #495867;
 font-family: Prompt;
 }
 
+@media only screen and (max-width: 767px) {
+   #menu-item{
+    z-index: 1000;
+    position: fixed;
+    right: 24%;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+    
+    #menu-item i{
+        font-size: 19px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .hcir2 {
+      border-radius: 100%;
+        width: 3.5em;
+        height: 3.5em;
+    box-shadow: 1px 5px 6px #333;
+}
+}
+@media only screen and (min-width: 768px) {
+    #menu-item{
+    z-index: 1000;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+     display: block;
+}
+    #menu-item i{
+        font-size: 1.65em;
+    }
+    
+    .hcir2 {
+      border-radius: 100%;
+        width: 3.85em;
+        height: 3.85em;
+    box-shadow: 1px 5px 6px #333;
+}
+
+}
+
 #section-two{
     background-color: #22AAA1;
 }
@@ -13,7 +58,6 @@ font-family: Prompt;
 #section-four{
     background-color: #FFCA3A;
 }
-
 
 
 .main-title .title{
@@ -29,6 +73,7 @@ font-family: Prompt;
         width: 4.3em;
         height: 4.3em;
 }
+
 .circle i
 {
 width: 1.5em;
@@ -38,4 +83,55 @@ border-radius: 100%;
 border-style: solid;
 border-color:white;
 
+}
+
+/*return-to-top*/
+#return-to-top {
+    z-index: 1000;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background: rgba(65, 79, 76, 0.5);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 8px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(65, 79, 76, 0.5);
+}
+
+#return-to-top:hover i {
+    top: 5px;
+}
+
+a #link-two:active:after {
+   background-color: aqua;
+    border-style: double;
+    border-color: aqua;
+    border-width: 20px
 }

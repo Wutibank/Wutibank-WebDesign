@@ -28,9 +28,11 @@
                 <p class="subtitle has-text-white">
                     Now, It's Me
                 </p>
+                <div>
                 <a href="#section-two" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-briefcase" style="font-size: 2em;color: #22AAA1"></i></a>
                 <a href="#section-three" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir" style="background-color: #F25757"> <i class="is-paddingless ion-ios-bulb" style="font-size: 2em;color: #F25757"></i></a>
                 <a href="#section-four" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-body" style="font-size: 2em;color: #FFCA3A"></i></a>
+                </div>
 <!--
                 <div class="circle">
                     <a href="#section-two">
@@ -69,6 +71,9 @@
                             สืบเสาะความรู้ด้วยการลงมือทำ
                         </div>
                     </div>
+                    <div>
+                     <a href="#" class="hbtn hb-fill-bottom hpad2 is-uppercase">show more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,8 +103,11 @@
                         <div class="subtitle has-text-white">
                             แรงบันดาลใจสร้างประสบการณ์
                         </div>
+                        
                     </div>
                 </div>
+                
+               
             </div>
         </div>
         <div class="owl-carousel">
@@ -134,6 +142,15 @@
         </div>
 
     </section>
+    
+      <!-- scroll Up-->
+        <div id="menu-item">
+                <a href="#section-two" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-briefcase" style="color: #22AAA1"></i></a>
+                <a href="#section-three" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #F25757"> <i class="is-paddingless ion-ios-bulb" style="color: #F25757"></i></a>
+                <a href="#section-four" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-body" style="color: #FFCA3A"></i></a>
+                </div>
+        <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
+        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="script.js"></script>
@@ -167,6 +184,21 @@
                 } // End if
             });
         });
+        //menu on scroll
+          $(window).scroll(function() {
+                if ($(this).scrollTop() >= 300) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                    $('#menu-item').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                    $('#menu-item').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });a
     </script>
 </body>
 
