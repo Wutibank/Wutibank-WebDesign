@@ -1,0 +1,41 @@
+body {
+background-color: #495867;
+font-family: Prompt;
+}
+
+#section-two{
+    background-color: #22AAA1;
+}
+
+#section-three{
+    background-color: #F25757;
+}
+#section-four{
+    background-color: #FFCA3A;
+}
+
+
+
+.main-title .title{
+    font-size: 15vmin;
+}
+
+.main-title .subtitle{
+    font-size: 5vmin;
+}
+
+.hcir {
+      border-radius: 100%;
+        width: 4.3em;
+        height: 4.3em;
+}
+.circle i
+{
+width: 1.5em;
+height: 1.5em;
+display: inline-block;
+border-radius: 100%;
+border-style: solid;
+border-color:white;
+
+}
