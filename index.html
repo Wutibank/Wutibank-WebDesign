@@ -53,7 +53,7 @@
         </div>
     </section>
     <section class="hero is-fullheight" id="section-two">
-        <div class="has-text-centered">
+        <div class="has-text-centered is-hidden-touch">
             <a href="#section-one"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
         <div class="hero-body">
@@ -77,7 +77,7 @@
         </div>
     </section>
     <section class="hero is-fullheight" id="section-three">
-       <div class="has-text-centered">
+        <div class="has-text-centered is-hidden-touch">
             <a href="#section-two"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
         <div class="hero-body">
@@ -101,7 +101,7 @@
         </div>
     </section>
     <section class="hero is-fullheight" id="section-four">
-       <div class="has-text-centered">
+        <div class="has-text-centered is-hidden-touch">
             <a href="#section-three"> <i class="ion-ios-arrow-dropup-outline" style="font-size: 3rem;color: white"></i> </a>
         </div>
         <div class="hero-body">
@@ -127,12 +127,12 @@
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="script.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $(".owl-carousel").owlCarousel();
         });
-        $(document).ready(function () {
+        $(document).ready(function() {
             // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
+            $("a").on('click', function(event) {
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
@@ -143,7 +143,7 @@
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                    }, 800, function() {
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
                     });
@@ -151,17 +151,16 @@
             });
         });
         //menu on scroll
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             if ($(this).scrollTop() >= 300) { // If page is scrolled more than 50px
                 $('#return-to-top').fadeIn(200); // Fade in the arrow
                 $('#menu-item').fadeIn(200);
-            }
-            else {
+            } else {
                 $('#return-to-top').fadeOut(200);
                 $('#menu-item').fadeOut(200);
             }
         });
-        $('#return-to-top').click(function () { // When arrow is clicked
+        $('#return-to-top').click(function() { // When arrow is clicked
             $('body,html').animate({
                 scrollTop: 0 // Scroll to top of body
             }, 500);
