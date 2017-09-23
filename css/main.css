@@ -179,3 +179,10 @@ max-height: 30em;
     font-size: 1.65em;
     }
 /*end-project*/
+
+
+/*Activity*/
+#image-cover{
+   min-height: 200px;
+}
+/*end-Activity*/
