@@ -3,17 +3,19 @@ body {
     font-family: Prompt;
 }
 
+
 .aligner {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5px;
 }
 
 @media only screen and (max-width: 767px) {
     #menu-item {
         z-index: 1000;
         position: fixed;
-        top: 20px;
+        bottom: 5px;
         max-width: 50%;
         display: none;
     }
@@ -25,7 +27,7 @@ body {
     .hcir2 {
         border-radius: 100%;
         padding: 5px 0 0 0 !important;
-        margin: 0px 5px !important;
+        margin: 0px 0px !important;
         width: 2.6em;
         height: 2.6em;
          box-shadow: 0px 3px 0px #444;
@@ -66,9 +68,9 @@ body {
     height: 40px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     display: none;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
@@ -129,9 +131,10 @@ a #link-two:active:after {
 }
 
 .hcir {
-    border-radius: 100%;
+/*    border-radius: 100%;*/
     width: 4.3em;
     height: 4.3em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 }
 
 .circle i {
@@ -152,11 +155,14 @@ a #link-two:active:after {
 
 }
 #section-image-project{
- background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+background-color: rgba(255,255,255,0.95);
+
     }
 
 #section-image-project img{
 max-height: 30em;
+    border: 10px solid white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 
 
 }
@@ -169,6 +175,7 @@ max-height: 30em;
 
 }
 #menu-item-project i {
-        font-size: 1.65em;
+
+    font-size: 1.65em;
     }
 /*end-project*/

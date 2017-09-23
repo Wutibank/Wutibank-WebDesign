@@ -12,11 +12,11 @@ owl.owlCarousel({
             items:1,
             nav:false
         },
-        600:{
+        769:{
             items:2,
             nav:false
         },
-        1000:{
+        1008:{
             items:4,
             loop:true,
         }

@@ -21,6 +21,7 @@
         }
 
         ul.a {
+             padding-left: 20px;
             list-style-type: square;
             list-style: square;
         }
@@ -68,7 +69,7 @@
                     <span class="title is-5 is-uppercase">About Project</span>
                 </div>
                 <div class="column">
-                    <p class="title is-5">เว็บไซต์แสดงข้อมูลของแคคตัส สถานที่ขายหรือคาเฟ่แคคตัส โปรเจกต์ในรายวิชา Interactive Design.</p>
+                    <p class="subtitle is-5">เว็บไซต์แสดงข้อมูลของแคคตัส สถานที่ขายหรือคาเฟ่แคคตัส โปรเจกต์ในรายวิชา Interactive Design.</p>
 
                     <h3>เว็บไซต์ออกแบบในรูปแบบ Flat Design, Card design เน้นความเรียบง่ายสบายตา พื้นหลังของหน้า Home ใช้ภาพที่เป็น Cinemagraph โดยตัวเว็บไซต์ประกอบไปด้วยเนื้อหาหลักๆคือ ข้อมูลเกี่ยวกับแคคตัส คลังรูปภาพแคคตัส ชุมชนแลกเปลี่ยนข้อมูลแคคตัส แนะนำสถานที่ขายและคาเฟ่แคคตัส เว็บไซต์ Tiny Plants จึงเหมาะสาหรับผู้ที่สนใจ Cactus ต้องการที่จะหาความรู้ทั้งสายพันธุ์วิธีการดูแลรักษา และแลกเปลี่ยนความรู้กับกลุ่มคนที่ชื่นชอบแบบเดียวกัน</h3>
                 </div>
@@ -164,11 +165,11 @@
 
         <div id="menu-item-project">
 
-            <a id="link-two" href="index.html" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-home" style="color: #22AAA1"></i></a>
+            <a id="link-two" href="project.html" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #22AAA1"> <i class="is-paddingless ion-ios-arrow-back-outline" style="color: #22AAA1"></i></a>
 
         </div>
     </div>
-    <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em"></i></a>
+    <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #999"></i></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
@@ -205,7 +206,7 @@
         });
         //menu on scroll
         $(window).scroll(function() {
-            if ($(this).scrollTop() >= 300) { // If page is scrolled more than 50px
+            if ($(this).scrollTop() >= 100) { // If page is scrolled more than 50px
                 $('#return-to-top').fadeIn(200); // Fade in the arrow
                 $('#menu-item').fadeIn(200); // Fade in the arrow
             } else {
