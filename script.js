@@ -13,7 +13,7 @@ owl.owlCarousel({
             nav:false
         },
         600:{
-            items:1,
+            items:2,
             nav:false
         },
         1000:{
@@ -23,3 +23,11 @@ owl.owlCarousel({
     }
 });
 
+
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
