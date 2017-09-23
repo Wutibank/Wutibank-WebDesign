@@ -11,6 +11,7 @@ body {
     padding-left: 5px;
 }
 
+
 @media only screen and (max-width: 767px) {
     #menu-item {
         z-index: 1000;
@@ -186,3 +187,66 @@ max-height: 30em;
    min-height: 200px;
 }
 /*end-Activity*/
+
+
+/*me*/
+.head-me{
+    padding-top: 2em;
+}
+.parallax-cover {
+    /* The image used */
+
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.connect span{
+     color: #555;
+}
+.connect span:hover{
+         color: #000;
+
+}
+.connect-border{
+     border: 2px solid #888;
+    padding: 10px 20px !important;
+    margin: 10px;
+}
+.connect-border:hover{
+     border: 2px solid #Fff;
+    background-color: #FFCA3A;
+     transition: all 0.10s ease;
+
+}
+/*end-mehead*/
+
+.pb-1{
+    padding-bottom: 0.5em;
+}
+.pb-2{
+    padding-bottom: 0.75em;
+}
+.pb-3{
+    padding-bottom: 1em;
+}
+
+.pt-3{
+    padding-top: 1em;
+}
+
+.pl-1{
+    padding-left: 0.5em;
+}
+.pl-2{
+    padding-left: 0.75em;
+}
+.pl-3{
+    padding-left: 1em;
+}
