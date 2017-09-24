@@ -384,7 +384,7 @@ input[type="radio"][id="other"]:checked~.video {
 
 .tileAmimate {
     float: left;
-    transition: all 2s;
+    transition: all 1s ease-in-out;
 }
 
 
