@@ -72,7 +72,7 @@
         </div>
     </section>
     <div class="parallax-cover" style="background-image: url('image/skills.jpg');"></div>
-    <section class="hero is-fullheight" id="section-projectlist">
+    <section class="hero is-fullheight" id="section-projectlist" style="padding-bottom: 2em">
         <div class="container">
             <div style="padding: 0 6vmin">
                 <div class="has-text-centered head-me">
@@ -91,7 +91,7 @@
                             <p class="is-size-6-desktop has-text-weight-light pl-3">Frond-End Development<br>Back-End Development (Learning...)<br>UX/UI Design<br>Graphic Design<br>Poetry Writing</p>
 
                             <p class="is-size-5-desktop has-text-weight-semibold pt-3">Programming language</p>
-                            <p class="is-size-6-desktop has-text-weight-light pl-3"> HTML & CSS<br> Javascript
+                            <p class="is-size-6-desktop has-text-weight-light pl-3"> HTML &amp; CSS<br> Javascript
                                 <br> PHP
                                 <br> C++ / C / C#
                             </p>
@@ -119,8 +119,6 @@
                             Logical Thinking<br>
                             Desire to Learn
                             </p>
-
-                            <p style="padding-bottom: 2em"></p>
 
                         </div>
                     </div>
@@ -195,7 +193,6 @@ Github</span>
 
     <!-- scroll Up-->
     <div class="aligner">
-
         <div id="menu-item-project">
 
             <a id="link-two" href="index.html" class="hbtn hb-fill-bottom-rev-bg hpad3 hcir2" style="background-color: #FFCA3A"> <i class="is-paddingless ion-ios-home" style="color: #FFCA3A"></i></a>
@@ -261,21 +258,7 @@ Github</span>
                 } // End if
             });
         });
-        //menu on scroll
-        $(window).scroll(function() {
-            if ($(this).scrollTop() >= 300) { // If page is scrolled more than 50px
-                $('#return-to-top').fadeIn(200); // Fade in the arrow
-                $('#menu-item').fadeIn(200); // Fade in the arrow
-            } else {
-                $('#return-to-top').fadeOut(200); // Else fade out the arrow
-                $('#menu-item').fadeOut(200); // Else fade out the arrow
-            }
-        });
-        $('#return-to-top').click(function() { // When arrow is clicked
-            $('body,html').animate({
-                scrollTop: 0 // Scroll to top of body
-            }, 500);
-        });
+       
     </script>
 </body>
 
