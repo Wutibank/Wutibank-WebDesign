@@ -227,6 +227,10 @@ max-height: 30em;
 }
 /*end-mehead*/
 
+.fix-top{
+    position: fixed;
+    z-index: 1000;
+}
 .pb-1{
     padding-bottom: 0.5em;
 }
