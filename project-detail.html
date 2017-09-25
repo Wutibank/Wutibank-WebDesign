@@ -50,7 +50,7 @@
         </div>
     </section>
 
-    <section class="section-head" id="text-head" style=" background-color: #22AAA1;">
+    <section id="text-head" style=" background-color: #22AAA1;">
         <div class="container">
             <div class="has-text-centered">
                 <div class="is-inline-block ">
@@ -65,9 +65,8 @@
 
     <section class="section" id="section-image-project">
         <div class="container">
-            <div class="has-text-centered">
-                <figure class="">
-                    <img src="image/d003.png">
+            <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
+                <figure class=""><img src="image/d003.png">
                 </figure>
             </div>
         </div>
@@ -76,7 +75,7 @@
     <section class="section" id="section-projectlist">
         <div class="container">
 
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 1</sup>
                     <span class="title is-5 is-uppercase">About Project</span>
@@ -89,7 +88,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 2</sup>
                     <span class="title is-5">MATERIAL</span>
@@ -105,7 +104,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 3</sup>
                     <span class="title is-5">ROLES</span>
@@ -121,7 +120,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 4</sup>
                     <span class="title is-5">LEARNING SKILLS</span>
@@ -137,7 +136,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 5</sup>
                     <span class="title is-5">LINK</span>
@@ -149,11 +148,11 @@
             </div>
             <br>
             <div class="columns">
-                <div class="column is-3">
+                <div class="column is-3 wow fadeInDown">
                     <sup>No 6</sup>
                     <span class="title is-5">MORE IMAGE</span>
                 </div>
-                <div class="column">
+                <div class="column wow fadeIn" data-wow-duration="3s">
                     <div class="columns is-multiline">
                         <div class="column is-4">
                             <div class="item">
@@ -213,13 +212,10 @@
 
     <!-- Magnific Popup core JS file -->
     <script src="dist/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    <script src="dist/wow/wow.min.js"></script>
     <script src="script.js"></script>
     <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-
-        });
+        new WOW().init();
     </script>
 </body>
 

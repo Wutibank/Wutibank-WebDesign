@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="dist/magnific-popup/magnific-popup.css">
     <style>
         body {
             margin: 0;
@@ -52,7 +54,7 @@
         </div>
     </section>
 
-    <section class="section-head" id="text-head" style=" background-color: #F25757;">
+    <section id="text-head" style=" background-color: #F25757;">
         <div class="container">
             <div class="has-text-centered">
                 <div class="is-inline-block ">
@@ -67,9 +69,11 @@
     <section class="section" id="section-image-project">
         <div class="container">
 
-            <div class="has-text-centered">
+            <div class="has-text-centered wow fadeIn" data-wow-duration="2s">
                 <figure class="">
-                    <img src="image/d003.png">
+                    <a class="image-popup-no-margins" href="image/d003.png">
+                        <img src="image/d003.png">
+                    </a>
                 </figure>
             </div>
         </div>
@@ -78,7 +82,7 @@
     <section class="section" id="section-projectlist">
         <div class="container">
 
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 1</sup>
                     <span class="title is-5 is-uppercase">About Activity</span>
@@ -91,7 +95,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 2</sup>
                     <span class="title is-5">DATE</span>
@@ -102,7 +106,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 3</sup>
                     <span class="title is-5">ORGANIZER</span>
@@ -113,7 +117,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 4</sup>
                     <span class="title is-5">ROLES</span>
@@ -124,7 +128,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 5</sup>
                     <span class="title is-5">LEARNING SKILLS</span>
@@ -140,7 +144,7 @@
 
             </div>
             <br>
-            <div class="columns">
+            <div class="columns wow fadeInDown">
                 <div class="column is-3">
                     <sup>No 6</sup>
                     <span class="title is-5">LINK</span>
@@ -152,14 +156,18 @@
             </div>
             <br>
             <div class="columns">
-                <div class="column is-3">
+                <div class="column is-3 wow fadeInDown" data-wow-duration="3s">
                     <sup>No 7</sup>
                     <span class="title is-5">MORE IMAGE</span>
                 </div>
-                <div class="column">
+                <div class="column wow fadeIn">
                     <div class="columns is-multiline">
                         <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea01.png"></div>
+                            <div class="item">
+                                <a class="image-popup-no-margins" href="image/ea01.png">
+                                    <img alt="" src="image/ea01.png">
+                                </a>
+                            </div>
                         </div>
                         <div class="column is-4">
                             <div class="item"><img alt="" src="image/ea02.png"></div>
@@ -199,13 +207,13 @@
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #999"></i></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="dist/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="dist/wow/wow.min.js"></script>
     <script src="script.js"></script>
     <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel();
-
-        });
+        new WOW().init();
     </script>
 </body>
 

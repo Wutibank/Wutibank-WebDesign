@@ -197,11 +197,8 @@ body {
 }
 
 #text-head {
-    display: none;
     display: block;
-}
-
-.section-head {
+    display: none;
     position: fixed;
     z-index: 500;
     top: 0;
