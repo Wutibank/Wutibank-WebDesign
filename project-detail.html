@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="dist/magnific-popup/magnific-popup.css">
     <style>
         body {
             margin: 0;
@@ -35,13 +37,11 @@
         <div class="container">
 
             <div class="has-text-centered">
-
-
                 <div class="is-inline-block ">
-                    <div class="title has-text-white is-size-2-touch is-size-1-desktop" style="padding-bottom: 0.2em">
-                        Name Project
+                    <div class="title has-text-white is-size-5-touch is-size-1-desktop" style="padding-bottom: 0.2em">
+                        Name Project Name Project Name Project
                     </div>
-                    <div class="subtitle has-text-white">
+                    <div class="subtitle has-text-white is-size-6-touch is-size-4-desktop">
                         คำอธิบายย่อหนึ่งประโยค
                     </div>
                 </div>
@@ -50,10 +50,21 @@
         </div>
     </section>
 
+    <section class="section-head" id="text-head" style=" background-color: #22AAA1;">
+        <div class="container">
+            <div class="has-text-centered">
+                <div class="is-inline-block ">
+                    <div class="title has-text-white is-size-5-touch is-size-3-desktop" style="padding: 0.5em">
+                        Name Project Name Project Name Project
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="section" id="section-image-project">
-          <div class="container">
+        <div class="container">
             <div class="has-text-centered">
                 <figure class="">
                     <img src="image/d003.png">
@@ -145,7 +156,12 @@
                 <div class="column">
                     <div class="columns is-multiline">
                         <div class="column is-4">
-                            <div class="item"><img alt="" src="image/ea01.png"></div>
+                            <div class="item">
+                                <a class="image-popup-no-margins" href="image/ea01.png">
+                                    <img alt="" src="image/ea01.png">
+                                </a>
+                            </div>
+
                         </div>
                         <div class="column is-4">
                             <div class="item"><img alt="" src="image/ea02.png"></div>
@@ -182,17 +198,28 @@
 
         </div>
     </div>
+
     <a href="#section-one" id="return-to-top"><i class="ion-ios-arrow-up-outline" style="font-size: 2em;color: #999"></i></a>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="dist/magnific-popup/jquery.magnific-popup.min.js"></script>
+
     <script src="script.js"></script>
     <script>
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel();
 
         });
-
     </script>
 </body>
 

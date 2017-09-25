@@ -42,14 +42,14 @@
             </div>
         </div>
     </section>
-    <div class="parallax-cover is-hidden-touch" style="background-image: url('image/msp01.JPG');"></div>
+    <div class="parallax-cover is-hidden-touch wow fadeIn" style="background-image: url('image/msp01.JPG');"></div>
 
     <section class="hero is-fullheight" id="section-projectlist">
 
         <div class="container">
-            <img class="is-hidden-desktop" src="image/msp01.JPG">
+            <img class="is-hidden-desktop  wow fadeIn" src="image/msp01.JPG">
             <div style="padding: 0 6vmin">
-                <div class="has-text-centered head-me">
+                <div class="has-text-centered head-me wow fadeIn">
 
                     <sup class="title is-5">No 1</sup>
                     <p class="title is-1 is-uppercase" style="font-style: italic">I AM</p>
@@ -57,11 +57,11 @@
                 </div>
                 <hr>
                 <div class="">
-                    <p class="is-size-3-desktop is-size-4-touch has-text-centered">For now, it’s just me. Wutthichai Panyasung.</p>
+                    <p class="is-size-3-desktop is-size-4-touch has-text-centered wow fadeIn">For now, it’s just me. Wutthichai Panyasung.</p>
                     <br>
-                    <p class="is-size-5-desktop ">I am a student in the third year of a King Mongkut's University of Technology Thonburi (KMUTT), In the Field of study Applied Computer Science - Multimedia. I am studying many topics. For example - Graphic design, Programming, Video production and so on, About computer and information technology. Hobby, I like to do surfing the internet, writing articles or poems of memoir on some day.</p>
+                    <p class="is-size-5-desktop wow fadeIn">I am a student in the third year of a King Mongkut's University of Technology Thonburi (KMUTT), In the Field of study Applied Computer Science - Multimedia. I am studying many topics. For example - Graphic design, Programming, Video production and so on, About computer and information technology. Hobby, I like to do surfing the internet, writing articles or poems of memoir on some day.</p>
                     <br>
-                    <p class="is-size-5-desktop">
+                    <p class="is-size-5-desktop wow fadeIn">
                         In addition, I am interested to follow and learn more about the trends of technology in today. And usually read articles about website development, Digital Media Design and IT news.</p>
                 </div>
             </div>
@@ -69,11 +69,11 @@
             <br>
         </div>
     </section>
-    <div class="parallax-cover" style="background-image: url('image/skills.jpg');"></div>
+    <div class="parallax-cover wow fadeIn" style="background-image: url('image/skills.jpg');"></div>
     <section class="hero is-fullheight" id="section-projectlist" style="padding-bottom: 2em">
         <div class="container">
             <div style="padding: 0 6vmin">
-                <div class="has-text-centered head-me">
+                <div class="has-text-centered head-me wow fadeIn">
 
                     <sup class="title is-5">No 2</sup>
                     <p class="title is-1 is-uppercase" style="font-style: italic">SKILLS</p>
@@ -82,7 +82,7 @@
                 <hr>
                 <div class="">
                     <div class="columns">
-                        <div class="column" style="padding-left: 5vmin">
+                        <div class="column wow fadeIn" style="padding-left: 5vmin">
                             <p class="title is-3 has-text-centered">Hard Skills</p>
 
                             <p class="is-size-5-desktop has-text-weight-semibold pb-1">Ability</p>
@@ -107,7 +107,7 @@
                         </div>
                         <div class="is-hidden-mobile" style="border-left: thick solid #FFCA3A;">
                         </div>
-                        <div class="column" style="padding-left: 5vmin">
+                        <div class="column wow fadeIn" style="padding-left: 5vmin">
                             <p class="title is-3 has-text-centered">Soft Skills</p>
 
                             <p class="is-size-6-desktop has-text-weight-light pl-3"> Positive Attitude<br> Collaborating
@@ -123,11 +123,11 @@
 
     </section>
 
-    <div class="parallax-cover" style="background-image: url('image/connect.jpg');"></div>
+    <div class="parallax-cover wow fadeIn" style="background-image: url('image/connect.jpg');"></div>
     <section class="hero is-fullheight" id="section-projectlist">
         <div class="container">
             <div style="padding: 0 6vmin">
-                <div class="has-text-centered head-me">
+                <div class="has-text-centered head-me  wow fadeIn">
 
                     <sup class="title is-5">No 3</sup>
                     <p class="title is-1 is-uppercase" style="font-style: italic">CONNECT</p>
@@ -135,7 +135,7 @@
                 </div>
                 <hr>
 
-                <div class="connect has-text-centered">
+                <div class="connect has-text-centered  wow fadeIn">
                     <div class="connect-border is-inline-block">
                         <a href="mailto:wutihot@hotmail.com">
                             <span class="is-size-5"> <i class="icon ion-md-mail"></i>
@@ -172,7 +172,7 @@ Github</span>
                     </div>
                 </div>
                 <br>
-                <div class="has-text-centered" style="margin-bottom: 5vmin">
+                <div class="has-text-centered  wow fadeIn" style="margin-bottom: 5vmin">
                     <div style="background-image: url('image/my01.jpg');min-height: 80vmin; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
                     </div>
                 </div>
@@ -198,8 +198,10 @@ Github</span>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="dist/wow/wow.min.js"></script>
     <script src="script.js"></script>
     <script>
+        new WOW().init();
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel();
         });
