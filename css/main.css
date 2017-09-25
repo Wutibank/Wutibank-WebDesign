@@ -202,7 +202,8 @@ body {
     position: fixed;
     z-index: 500;
     top: 0;
-    width: 100%
+    width: 100%;
+    transition: all 0.3s ease;
 }
 
 
